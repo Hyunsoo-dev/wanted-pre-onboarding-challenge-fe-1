@@ -1,0 +1,21 @@
+.pages_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+
+}
+
+.pages_container .pages_container_item {
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    text-decoration: none;
+}
+
+.pages_container .pages_container_item .pages_container_item {
+    text-decoration: none;
+}

@@ -20,13 +20,15 @@ function App() {
   return (
     <div className="App">
       <Header signinToggle={signinToggle} setSigninToggle={setSigninToggle} />
-      <Routes>
-        <Route path='/' element={<Pages />} />
-        <Route path='/auth' element={<Auth />} />
-        <Route path='/auth/signup' element={<Signup />} />
-        <Route path='/auth/signin' element={<Signin setSigninToggle={setSigninToggle} />} />
-        <Route path='/todo' element={<Todo />} />
-      </Routes>
+      <div className='wrapper'>
+        <Routes>
+          <Route path='/' element={<Pages />} />
+          <Route path='/auth' element={<Auth />} />
+          <Route path='/auth/signup' element={<Signup />} />
+          <Route path='/auth/signin' element={<Signin setSigninToggle={setSigninToggle} />} />
+          <Route path='/todo' element={<Todo />} />
+        </Routes>
+      </div>
     </div>
   );
 }

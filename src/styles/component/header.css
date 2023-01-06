@@ -1,0 +1,17 @@
+.container {
+    height: 100px;
+}
+
+.container .wrapper {
+    position: relative;
+    height: 100%;
+}
+.container .title {
+    font-size: 30px;
+}
+
+
+.container .wrapper .button_box {
+    position: absolute;
+    right: 10px;
+}

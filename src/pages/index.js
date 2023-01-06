@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom';
-
-const Pages = () => {
-    
+import LinkComponent from '../component/LinkComponent';
+import '../styles/pages/index.css';
+const Pages = () => {   
     return (
-        <div>
-            
-            <Link to='auth'>Auth</Link>
-            <Link to='todo'>Todo</Link>
+        <div className='pages_container'>
+            <LinkComponent path='auth' linkName='Auth' />
+            <LinkComponent path='todo' linkName='Todo' />
         </div>
     )
 }
